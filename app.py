@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 from sklearn.naive_bayes import GaussianNB
 
-# ==============================
-# KONFIGURASI HALAMAN
-# ==============================
 st.set_page_config(
     page_title="Prediksi PPDB SDN",
     page_icon="🎓",
@@ -19,10 +16,6 @@ st.write(
 )
 
 st.write("---")
-
-# ==============================
-# DATA LATIH (SIMULASI)
-# ==============================
 data_latih = {
     "nilai_rata2": [
         85, 60, 78, 90, 55, 95, 70, 88, 65, 82,
@@ -41,19 +34,11 @@ data_latih = {
 }
 
 df = pd.DataFrame(data_latih)
-
-# ==============================
-# TRAINING MODEL
-# ==============================
 X = df[["nilai_rata2", "jarak_km"]]
 y = df["status"]
 
 model = GaussianNB()
 model.fit(X, y)
-
-# ==============================
-# INPUT USER
-# ==============================
 st.sidebar.header("Masukkan Data Siswa")
 
 input_nilai = st.sidebar.slider(
@@ -74,9 +59,6 @@ st.subheader("📊 Data Kamu")
 st.write(f"- **Nilai Rata-rata:** {input_nilai}")
 st.write(f"- **Jarak Rumah:** {input_jarak} km")
 
-# ==============================
-# PREDIKSI
-# ==============================
 if st.button("Cek Peluang Sekarang"):
     input_df = pd.DataFrame(
         [[input_nilai, input_jarak]],
@@ -99,8 +81,6 @@ if st.button("Cek Peluang Sekarang"):
         )
         st.info("💡 Saran: Pertimbangkan sekolah dengan jarak zonasi lebih dekat.")
 
-# ==============================
-# DATA HISTORIS (OPSIONAL)
-# ==============================
 with st.expander("📁 Lihat Data Historis (Simulasi)"):
     st.dataframe(df)
+
