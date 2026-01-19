@@ -1,17 +1,42 @@
-# Prediksi Peluang Lolos PPDB SDN
+# 🎓 Sistem Prediksi PPDB SDN Karamat Randu Menggunakan Naive Bayes
 
-Aplikasi berbasis Artificial Intelligence menggunakan algoritma
-Naive Bayes untuk memprediksi peluang kelulusan siswa
-dalam PPDB Sekolah Dasar Negeri (SDN).
+Proyek ini merupakan aplikasi berbasis **Artificial Intelligence** yang menerapkan
+algoritma **Naive Bayes** untuk memprediksi peluang kelulusan calon siswa
+dalam proses **Penerimaan Peserta Didik Baru (PPDB)** Sekolah Dasar Negeri (SDN).
 
-## Tech Stack
-- Python
+Aplikasi ini dibuat sebagai **Proyek Akhir UAS Mata Kuliah Artificial Intelligence**
+Universitas Muhammadiyah Sukabumi.
+
+---
+
+## 🧠 Metode yang Digunakan
+- Simple Learning / Prediction
+- Algoritma: **Naive Bayes (GaussianNB)**
+
+---
+
+## 📊 Data yang Digunakan
+Data latih berupa data dummy PPDB tahun sebelumnya yang mencakup:
+- Rata-rata nilai siswa
+- Jarak rumah ke sekolah
+- Status kelulusan (Lolos / Gagal)
+
+Data digunakan untuk melatih model Naive Bayes agar dapat memprediksi
+peluang kelulusan siswa baru.
+
+---
+
+## 🖥️ Teknologi yang Digunakan
+- Python 3.12
 - Streamlit
+- Pandas
 - Scikit-learn
 
-## Cara Menjalankan Program
-1. Install library yang dibutuhkan:
-   pip install -r requirements.txt
+---
 
-2. Jalankan aplikasi:
-   streamlit run app.py
+## 🚀 Cara Menjalankan Aplikasi
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/USERNAME_GITHUB/prediksi-ppdb-naive-bayes.git
+cd prediksi-ppdb-naive-bayes
