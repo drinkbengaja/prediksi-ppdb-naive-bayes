@@ -36,7 +36,15 @@ peluang kelulusan siswa baru.
 
 ## 🚀 Cara Menjalankan Aplikasi
 
-### 1️⃣ Clone Repository
+### 1. Clone Repository
 ```bash
 git clone https://github.com/USERNAME_GITHUB/prediksi-ppdb-naive-bayes.git
 cd prediksi-ppdb-naive-bayes
+### 2. Install Dependencies
+python -m pip install streamlit pandas scikit-learn
+
+### 3. Jalankan Aplikasi
+python -m streamlit run app.py
+
+
+
