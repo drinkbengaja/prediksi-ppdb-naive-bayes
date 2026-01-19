@@ -7,13 +7,9 @@ dalam proses **Penerimaan Peserta Didik Baru (PPDB)** Sekolah Dasar Negeri (SDN)
 Aplikasi ini dibuat sebagai **Proyek Akhir UAS Mata Kuliah Artificial Intelligence**
 Universitas Muhammadiyah Sukabumi.
 
----
-
 ## Metode yang Digunakan
 - Simple Learning / Prediction
 - Algoritma: **Naive Bayes (GaussianNB)**
-
----
 
 ## Data yang Digunakan
 Data latih berupa data dummy PPDB tahun sebelumnya yang mencakup:
@@ -24,8 +20,6 @@ Data latih berupa data dummy PPDB tahun sebelumnya yang mencakup:
 Data digunakan untuk melatih model Naive Bayes agar dapat memprediksi
 peluang kelulusan siswa baru.
 
----
-
 ## Teknologi yang Digunakan
 - Python 3.12
 - Streamlit
@@ -33,8 +27,6 @@ peluang kelulusan siswa baru.
 - Scikit-learn
 - Visual Studio COde
 - cmd
-
----
 
 ## Cara Menjalankan Aplikasi
 ```bash
