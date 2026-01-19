@@ -31,7 +31,7 @@ peluang kelulusan siswa baru.
 ## Cara Menjalankan Aplikasi
 ```bash
 1. Clone Repository
-git clone https://github.com/USERNAME_GITHUB/prediksi-ppdb-naive-bayes.git
+git clone https://github.com/drinkbengaja/prediksi-ppdb-naive-bayes.git
 cd prediksi-ppdb-naive-bayes
 
 2. Install Dependencies
